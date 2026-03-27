@@ -52,9 +52,9 @@ jobs:
 
   tag-response:
     if: |
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@clawy')) ||
-      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@clawy')) ||
-      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@clawy'))
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@clawy-app')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@clawy-app')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@clawy-app'))
     runs-on: ubuntu-latest
     permissions:
       contents: write
