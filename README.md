@@ -51,3 +51,4 @@ python -m unittest test_depgraph -v
 ```
 
 31 tests covering module discovery, import parsing, graph building, cycle detection, output formats, and integration scenarios.
+# TODO: add support for circular dependency detection
